@@ -1,19 +1,20 @@
 import React from 'react'
 
 const Plan = (props) => {
-    const {isEditing, value, onPlanChange} = props;
+    const {isEditing, value, onValueChange} = props;
+
   return isEditing ? (  
-    <div>
+    <td>
         <input
-            type="text"
-            value={value}
-            onChange={(e) => onPlanChange(e.target.value)}
+        type="text"
+        value={value}
+        onChange={(e) => onValueChange(e.target.value)}
         />
-    </div>
+    </td>
   ) : (
-    <div>
+    <td>
         {value}
-    </div>
+    </td>
   )
 }
 

@@ -5,7 +5,7 @@ const AddButton = (props) => {
 
   return (
     <tr>
-        <td colspan='4'>
+        <td colSpan='4'>
             <button onClick={addRow}>Add</button>
         </td>
     </tr>

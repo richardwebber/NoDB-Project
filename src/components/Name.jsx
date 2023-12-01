@@ -4,17 +4,17 @@ const Name = (props) => {
     const {isEditing, value, onValueChange} = props;
 
   return isEditing ? (
-    <div>
+    <td>
         <input
         type="text"
         value={value}
         onChange={(e) => onValueChange(e.target.value)}
         />
-    </div>
+    </td>
   ) : (
-    <div>
+    <td>
         {value}
-    </div>
+    </td>
   )
 }
 

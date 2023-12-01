@@ -38,7 +38,7 @@ const InvoiceDisplay = () => {
     }
 
     const deleteRow = (id) => {
-        axios.delete(`/invoice/${id}`)
+        axios.delete(`/client/${id}`)
         .then((res) => {
             console.log(res.data)
             setCurrentData(res.data)
@@ -48,7 +48,7 @@ const InvoiceDisplay = () => {
         })
     }
 
-    const rows = currentData.map((client) => <TableRow
+    const rows = currentData.map((client) => <DivRow
     initialInvoiceData={client}
     initialEditMode={false}
     key={client.id}

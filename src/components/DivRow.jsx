@@ -18,14 +18,15 @@ const DivRow = (props) => {
 
     const changeEditMode = () => setIsEditing(true)
     const changeNormalMode = () => {
+
         const bodyObj = {
             name,
-            email,
-            phone, 
+            phone,
+            email, 
             plan
         }
         
-        axios.put(`./invoice/${initialInvoiceData.id}`, bodyObj)
+        axios.put(`./client/${initialInvoiceData.id}`, bodyObj)
         .then((res) => {
             console.log(res.data)
             setCurrentData(res.data)
@@ -54,7 +55,7 @@ const DivRow = (props) => {
             <Phone
             isEditing={editMode}
             value={phone}
-            onValuechange={setPhone}
+            onValueChange={setPhone}
             />
 
             <Email
@@ -66,7 +67,7 @@ const DivRow = (props) => {
             <Plan 
             isEditing={editMode}
             value={plan}
-            onValuechange={setPlan}
+            onValueChange={setPlan}
             />
 
 
