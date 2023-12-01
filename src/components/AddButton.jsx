@@ -1,8 +1,14 @@
 import React from 'react'
 
-const AddButton = () => {
+const AddButton = (props) => {
+    const {addRow} = props
+
   return (
-    <div>AddButton</div>
+    <tr>
+        <td colspan='4'>
+            <button onClick={addRow}>Add</button>
+        </td>
+    </tr>
   )
 }
 
