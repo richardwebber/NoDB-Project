@@ -5,10 +5,12 @@ import Plan from './Plan';
 import ModeButton from './ModeButton.jsx';
 import { useState } from 'react';
 import axios from 'axios';
+import './Component.css'
 
 const DivRow = (props) => {
     
-    const {initialInvoiceData, initialEditMode, deleteRow, currentData, setCurrentData} = props
+    const {initialInvoiceData, initialEditMode, deleteRow, currentData, setCurrentData, currentImage} = props
+    let testImg = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png'
 
     const [editMode, setIsEditing] = useState(initialEditMode)
     const [name, setName] = useState(initialInvoiceData.name)
@@ -38,7 +40,13 @@ const DivRow = (props) => {
     }
 
     return (
-        <tr>
+        <tr className="row">
+            <td>
+            <img className="userImg" src={currentImage} alt={testImg} />  
+            {/* <div dangerouslySetInnerHTML={{ __html: currentImage }} /> */}
+            </td>
+            
+
             <ModeButton
             isEditing={editMode}
             changeEditMode={changeEditMode}

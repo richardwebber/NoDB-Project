@@ -4,12 +4,12 @@ const ModeButton = (props) => {
     const {isEditing, changeEditMode, changeNormalMode, deleteRow} = props
   return isEditing ? (
     <td>
-        <button onClick={changeNormalMode}> Save </button>
+        <button onClick={changeNormalMode} className="modeButtons saveButton"> Save </button>
     </td>
   ) : (
     <td>
-        <button onClick={deleteRow}>Delete</button>
-        <button onClick={changeEditMode}>Edit</button>
+        <button onClick={deleteRow} className="modeButtons deleteButton" >Delete</button>
+        <button onClick={changeEditMode} className="modeButtons editButton">Edit</button>
     </td>
   )
 }

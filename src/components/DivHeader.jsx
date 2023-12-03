@@ -2,7 +2,8 @@ import React from 'react'
 
 const DivHeader = () => {
   return (
-    <tr>
+    <tr className="divHeader">
+        <th></th>
         <th></th>
         <th>Name</th>
         <th>Phone</th>

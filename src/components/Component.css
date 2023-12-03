@@ -1,0 +1,54 @@
+.row {
+    padding: 8px;
+    border-radius: 25px;
+  }
+
+  td {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-style: oblique;
+    text-align: center;
+  }
+
+  .modeButtons {
+    margin-right: 10px;
+  }
+
+  .addButton {
+    background-color: green;
+    margin-top: 10px;
+    width: 210px;
+  }
+
+  .deleteButton {
+    background-color: red;
+    width: 100px;
+    height: 60px;
+  }
+
+  .editButton {
+    background-color: #FFBD33;
+    width: 100px;
+    height: 60px;
+  }
+
+  .saveButton {
+    width: 210px;
+    background-color: blue;
+    height: 60px;
+  }
+
+  .tdStyle {
+    border: 1px solid #8B8B8B;
+    background-color: #404040;
+    border-radius: 2px;
+  }
+  
+  .userImg {
+    max-width: 60px;
+  }
+
+  .divHeader {
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }

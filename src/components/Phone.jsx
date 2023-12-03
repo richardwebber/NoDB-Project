@@ -12,7 +12,7 @@ const Phone = (props) => {
         />
     </td>
   ) : (
-    <td>
+    <td className="tdStyle">
         {value}
     </td>
   )

@@ -5,8 +5,8 @@ const AddButton = (props) => {
 
   return (
     <tr>
-        <td colSpan='4'>
-            <button onClick={addRow}>Add</button>
+        <td colSpan='6'>
+            <button onClick={addRow} className='addButton'>Add</button>
         </td>
     </tr>
   )
