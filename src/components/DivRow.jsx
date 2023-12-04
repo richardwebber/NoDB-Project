@@ -45,7 +45,6 @@ const DivRow = (props) => {
             <img className="userImg" src={currentImage} alt={testImg} />  
             {/* <div dangerouslySetInnerHTML={{ __html: currentImage }} /> */}
             </td>
-            
 
             <ModeButton
             isEditing={editMode}
@@ -53,7 +52,7 @@ const DivRow = (props) => {
             changeNormalMode={changeNormalMode}
             deleteRow={deleteRow}
             />
-
+            
             <Name
             isEditing={editMode}
             value={name}
@@ -77,7 +76,6 @@ const DivRow = (props) => {
             value={plan}
             onValueChange={setPlan}
             />
-
 
         </tr>
     )
