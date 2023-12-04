@@ -34,8 +34,16 @@
 
   .saveButton {
     width: 210px;
-    background-color: blue;
     height: 60px;
+
+    background: linear-gradient(45deg, #ff0000, #ff9900, #ffff00, #33cc33, #3399ff, #cc66ff);
+      background-size: 600% 600%;
+      animation: rainbowEffect 5s ease infinite;
+      padding: 10px 20px;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      font-size: 30px;
   }
 
   .tdStyle {
@@ -52,3 +60,11 @@
     font-size: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
+
+  @keyframes rainbowEffect {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+
